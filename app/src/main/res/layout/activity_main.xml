@@ -3,8 +3,8 @@
         xmlns:tools="http://schemas.android.com/tools">
     <data>
         <variable
-            name="product"
-            type="com.example.databindingmvvm.Product" />
+            name="customer"
+            type="com.example.databindingmvvm.models.Customer" />
 
     </data>
 <androidx.constraintlayout.widget.ConstraintLayout  xmlns:android="http://schemas.android.com/apk/res/android"
@@ -17,7 +17,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/t1"
-        android:text="@={product.productName}"
+        android:text="@{customer.customerName}"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
